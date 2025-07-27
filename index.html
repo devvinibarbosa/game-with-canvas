@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Game</title>
+    </head>
+    
+    <body>
+        <canvas id="my_canvas" width="400" height="400"></canvas>
+       
+       <script>
+            let canvas = document.getElementById("my_canvas");
+            let context = canvas.getContext('2d');
+
+            // context.fillStyle = 'red';
+            // context.fillRect(50, 50, 100, 100);
+            
+            // context.lineWidth = 3;
+            // context.strokeStyle = 'blue';
+            // context.strokeRect(50, 50, 100, 100)
+            
+            context.beginPath();
+            // context.moveTo(75, 250);
+            // context.lineTo(150, 50);
+            // context.lineTo(225, 250);
+            // context.lineTo(50, 120);
+            // context.lineTo(250, 120);
+            // context.lineTo(75, 250);
+            
+            // context.arc(
+            //     50,
+            //     50,
+            //     40,
+            //     90*Math.PI/180,
+            //     270*Math.PI/180,
+            //     false
+            // );
+            
+            context.beginPath();
+            context.arc(250, 50, 40, 0, 2*Math.PI);
+            // context.fill();
+            // context.stroke();
+
+            context.lineWidth = 5;
+            context.strokeStyle = 'black';
+
+            context.stroke();
+       </script> 
+    </body>
+</html>
